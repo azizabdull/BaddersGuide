@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Terms & Techniques Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .resource-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .resource-card h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .resource-card h3::before {
+            content: "🏸";
+            font-size: 1.2em;
+        }
+        
+        .resource-card p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .resource-card .specialty {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .visit-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .visit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .tips-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        
+        .tips-section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .tip-card {
+            background: linear-gradient(135deg, #f8f9ff, #e8f0ff);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .tip-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .tip-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏸 Badminton Terms & Techniques Guide</h1>
+            <p>Your comprehensive resource for mastering badminton terminology, techniques, and strategies. Explore these trusted websites to elevate your game!</p>
+        </div>
+        
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>TheUKRules.co.uk</h3>
+                <div class="specialty">Comprehensive A-Z Glossary</div>
+                <p>Features a complete A-Z list of badminton terminology and definitions, including playing techniques and match-winning strategies. Perfect for players who want thorough coverage of all terms from basic to advanced.</p>
+                <a href="#" class="visit-btn">Visit Site</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>BadmintonBites.com</h3>
+                <div class="specialty">Ultimate Glossary</div>
+                <p>Offers "The Ultimate Glossary of Badminton Terms" with detailed explanations of techniques like slice shots and tactical positioning terms. Great for understanding advanced playing concepts.</p>
+                <a href="#" class="visit-btn">Visit Site</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>TopEndSports.com</h3>
+                <div class="specialty">Court & Rules Focus</div>
+                <p>Provides solid badminton terminology covering court areas, illegal tactics, and stroke definitions. Clear explanations of terms like "carry," "back alley," and "baseline" make it ideal for beginners.</p>
+                <a href="#" class="visit-btn">Visit Site</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>WorldBadminton.com</h3>
+                <div class="specialty">Professional Authority</div>
+                <p>Features a badminton glossary drawn from multiple authoritative sources and professional experience. Particularly reliable for serious players seeking accurate, competition-level terminology.</p>
+                <a href="#" class="visit-btn">Visit Site</a>
+            </div>
+            
+            <div class="resource-card">
+                <h3>BadmintonJustin.com</h3>
+                <div class="specialty">Pro Player Insights</div>
+                <p>Features "10 Terminologies Used In Badminton (As Explained By A Pro)" focusing on the most commonly used terms explained by a professional player. Perfect for practical, real-world application.</p>
+                <a href="#" class="visit-btn">Visit Site</a>
+            </div>
+        </div>
+        
+        <div class="tips-section">
+            <h2>Getting Started with Badminton Terms</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>🎯 Start with Basics</h4>
+                    <p>Begin with court terminology and basic strokes before moving to advanced tactical terms and techniques.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>📚 Use Multiple Sources</h4>
+                    <p>Cross-reference terms across different sites to get the most complete understanding of each concept.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🏸 Practice Application</h4>
+                    <p>Try to use new terms during practice sessions to reinforce your learning and improve communication on court.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>⚡ Focus on Strategy</h4>
+                    <p>Pay special attention to tactical terminology that can help you understand and implement winning strategies.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🏸 Master the language of badminton and elevate your game! 🏸</p>
+        </div>
+    </div>
+</body>
+</html>
